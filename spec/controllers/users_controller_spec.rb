@@ -7,7 +7,7 @@ RSpec.describe UsersController, type: :controller do
       name: "BlocHead",
       email: "blochead@bloc.io",
       password: "blockhead",
-      password_confirmation: "blochead"
+      password_confirmation: "blockhead"
     }
   end
 
