@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-
+  has_many :posts
   # #2
   before_save { self.email = email.downcase if email.present? }
 
