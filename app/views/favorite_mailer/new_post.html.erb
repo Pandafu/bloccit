@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html; charset=UTF-8" http-equiv="content-type"/>
+  </head>
+  <body>
+    <h1>You're now following "<%= @post.title %>"</h1>
+    <p>
+      To stop notifications
+      <%= link_to "View post on site", topic_post_url(@post.topic, @post) %>
+    </p>
+  </body>
+</html>
