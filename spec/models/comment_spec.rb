@@ -5,7 +5,7 @@ RSpec.describe Comment do
   let(:user) { create(:user) }
   let(:post) { create(:post) }
 # #1 create a comment with an associated user
-  let(:comment) { Comment.create!(body: 'Comment Body', post: post, user: user) }
+  let(:comment) { create(:comment) }
 
 # #2 test that a comment belongs to a user and a post
   it { is_expected.to belong_to(:post) }

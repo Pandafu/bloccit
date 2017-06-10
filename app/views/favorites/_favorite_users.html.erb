@@ -1,0 +1,15 @@
+<div class="media">
+  <h4>Posts</h4>
+  <div class="media-body">
+    <% user.favorites.each do |favorite| %>
+      <div class="favorite-user-gravatar">
+        <%= image_tag favorite.post.user.avatar_url(50), class: 'gravatar' %>
+          <%= link_to favorite.post.title, topic_post_path(favorite.post.topic, favorite.post) %>
+        <h4>
+          <%= favorite.post.votes.count %> votes
+          <%= favorite.post.comments.count %> comments
+        </h4>
+      </div>
+    <% end %>
+    </div>
+  </div>
